@@ -1,8 +1,11 @@
 var express = require('express');
 var app = express();
 
+app.use("/assets", express.static('./assets/'));
+
 app.get('/', function (req, res) {
-    res.send('Hello World');
+    res.sendFile( __dirname + "/src/home.html" );
+    //res.send('Hello World');
 })
 
 app.get('/process_get', function (req, res) {
