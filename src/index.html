@@ -2,16 +2,324 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Happy Self Care</title>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link  rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
 </head>
 <body>
 
     <form action = "http://127.0.0.1:8081/process_get" method = "GET">
         First Name: <input type = "text" name = "first_name">  <br>
         Last Name: <input type = "text" name = "last_name">
+
+
+        <div class="container mt-5">
+            <div class="d-flex justify-content-center row">
+                <div class="col-md-10 col-lg-10">
+                    <div class="border">
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                                <h4>Happy Self Care Quiz</h4>
+                            </div>
+                        </div>
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.1</h3>
+                                <h5 class="mt-1 ml-2">Tranche d’âge :</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="age_18_25" value="18-25"> <span>18 - 25 ans</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="age_25_35" value="25-35"> <span>25 - 35 ans</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="age_35" value="35"> <span>+ 35 ans</span></label>
+                            </div>
+                        </div>
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.2</h3>
+                                <h5 class="mt-1 ml-2">Ancienneté :</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="junior" value="junior"> <span>Junior</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="senior" value="senior"> <span>Senior</span></label>
+                            </div>
+                        </div>
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.3</h3>
+                                <h5 class="mt-1 ml-2">Evolution de la difficulté des missions :</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="great_diff" value="great_diff"> <span> Très satisfaisant</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="soso_diff" value="soso_diff"> <span>Satisfaisant</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="bad_diff" value="bad_diff"> <span>Non satisfaisant</span></label>
+                            </div>
+                        </div>
+
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.4</h3>
+                                <h5 class="mt-1 ml-2">Intérêt pour les missions :</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="great_interest" value="great_interest"> <span> Très satisfaisant</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="soso_interest" value="soso_interest"> <span>Satisfaisant</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="bad_interest" value="bad_interest"> <span>Non satisfaisant</span></label>
+                            </div>
+                        </div>
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.5</h3>
+                                <h5 class="mt-1 ml-2">Est-ce que les heures de travail sont adéquates ? Sont-elles assez flexibles ?</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="yes_hours" value="yes_hours"> <span>Oui</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="ok_hours" value="ok_hours"> <span>Dans la norme</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="no_hours" value="no_hours"> <span>Non</span></label>
+                            </div>
+                        </div>
+
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.6</h3>
+                                <h5 class="mt-1 ml-2">Quelle est la durée du trajet domicile - entreprise ?</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="30min" value="30min"> <span>Moins de 30min</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="30min1h" value="30min1h"> <span>Entre 30min et 1h</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="1h" value="1h"> <span>Plus d’1h</span></label>
+                            </div>
+                        </div>
+
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.7</h3>
+                                <h5 class="mt-1 ml-2">Sur une note de 10, comment trouves-tu la relation avec tes collègues ?</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="number"> <input type="number" name="rate_relation" value="rate_relation" min="0" max="10"></label>
+                            </div>
+                        </div>
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.8</h3>
+                                <h5 class="mt-1 ml-2">Balance présentiel/distanciel ?</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="presentiel" value="presentiel"> <span>Majoritairement présentiel</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="balance_ok" value="balance_ok"> <span>Egale</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="distanciel" value="distanciel"> <span>Majoritairement distanciel</span></label>
+                            </div>
+                        </div>
+
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.9</h3>
+                                <h5 class="mt-1 ml-2">Fréquence des réunions ?</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="none_reunion" value="none_reunion"> <span>Aucune</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="few_reunion" value="few_reunion"> <span>1 à 3 réunions / semaine</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="lot_reunion" value="lot_reunion"> <span>Réunions tous les jours ou presque</span></label>
+                            </div>
+                        </div>
+
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.10</h3>
+                                <h5 class="mt-1 ml-2">Droit à la déconnexion ? (exemple : mail à 22h) </h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="great_deco" value="great_deco"> <span>Très satisfaisant</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="ok_deco" value="ok_deco"> <span>Satisfaisant</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="no_deco" value="no_deco"> <span>Non satisfaisant</span></label>
+                            </div>
+                        </div>
+
+
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.11</h3>
+                                <h5 class="mt-1 ml-2">Satisfaction : méthode de travail ?</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="no_meth" value=no_meth"> <span>Non</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="few_meth" value="few_meth"> <span>Un peu</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="lot_meth" value="lot_meth"> <span>Oui </span></label>
+                            </div>
+                        </div>
+
+
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.12</h3>
+                                <h5 class="mt-1 ml-2">Satisfaction du nombre d’activités d’entreprise ?</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="few_acti" value="few_acti"> <span>Faible</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="soso_acti" value="soso_acti"> <span>Moyen</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="lot_acti" value="lot_acti"> <span>Elevé</span></label>
+                            </div>
+                        </div>
+
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.13</h3>
+                                <h5 class="mt-1 ml-2">Satisfaction salariale ?</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="ok_salary" value="ok_salary"> <span>d’accord</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="not_ok_salary" value="not_ok_salary"> <span>Pas d'accord</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="soso_ok_salary" value="soso_ok_salary"> <span>Plutôt d'accord</span></label>
+                            </div>
+                        </div>
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.14</h3>
+                                <h5 class="mt-1 ml-2">Satisfaction organisation des congés (imposés ou pas) ?</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="yes_offday" value="yes_offday"> <span>Oui</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="no_offday" value="no_offday"> <span>Non</span></label>
+                            </div>
+                        </div>
+
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.15</h3>
+                                <h5 class="mt-1 ml-2">Relation employé et manager</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="ok_relation" value="ok_relation"> <span>Bonne</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="soso_relation" value="soso_relation"> <span>Moyenne</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="bad_relation" value="bad_relation"> <span>Mauvaise</span></label>
+                            </div>
+                        </div>
+
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.16</h3>
+                                <h5 class="mt-1 ml-2">Missions correspondantes aux attentes</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="yes_attente" value="yes_attente"> <span>Oui</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="no_attente" value="no_attente"> <span>Non</span></label>
+                            </div>
+                        </div>
+
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.17</h3>
+                                <h5 class="mt-1 ml-2">Domaines d'activité</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="admin" value="admin"> <span>Administration</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="it" value="it"> <span>IT</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="management" value="management"> <span>Management</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="commercial" value="commercial"> <span>Commercial</span></label>
+                            </div>
+                        </div>
+
+
+                        <div class="question bg-white p-3 border-bottom">
+                            <div class="d-flex flex-row align-items-center question-title">
+                                <h3 class="text-danger">Q.18</h3>
+                                <h5 class="mt-1 ml-2">Sexe :</h5>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="feminin" value="feminin"> <span>Féminin</span></label>
+                            </div>
+                            <div class="ans ml-2">
+                                <label class="radio"> <input type="radio" name="masculin" value="masculin"> <span>Masculin</span></label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <input type = "submit" value = "Submit">
     </form>
 
 
+
 </body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </html>

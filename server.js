@@ -8,7 +8,14 @@ app.get('/', function (req, res) {
 app.get('/process_get', function (req, res) {
     response = {
         first_name:req.query.first_name,
-        last_name:req.query.last_name
+        last_name:req.query.last_name,
+        age_18_25:req.query.age_18_25,
+        age_25_35:req.query.age_25_35,
+        age_35:req.query.age_35,
+        feminin:req.query.feminin,
+        masculin:req.query.masculin,
+        junior:req.query.junior,
+        senior:req.query.senior
     };
     console.log(response);
     res.end(JSON.stringify(response));
