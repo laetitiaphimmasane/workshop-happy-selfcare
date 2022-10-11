@@ -9,10 +9,6 @@
 <body>
 
     <form action = "http://127.0.0.1:8081/process_get" method = "GET">
-        First Name: <input type = "text" name = "first_name">  <br>
-        Last Name: <input type = "text" name = "last_name">
-
-
         <div class="container mt-5">
             <div class="d-flex justify-content-center row">
                 <div class="col-md-10 col-lg-10">
@@ -107,13 +103,13 @@
                                 <h5 class="mt-1 ml-2">Quelle est la durée du trajet domicile - entreprise ?</h5>
                             </div>
                             <div class="ans ml-2">
-                                <label class="radio"> <input type="radio" name="30min" value="30min"> <span>Moins de 30min</span></label>
+                                <label class="radio"> <input type="radio" name="trentemin" value="30min"> <span>Moins de 30min</span></label>
                             </div>
                             <div class="ans ml-2">
-                                <label class="radio"> <input type="radio" name="30min1h" value="30min1h"> <span>Entre 30min et 1h</span></label>
+                                <label class="radio"> <input type="radio" name="trenteminuneh" value="30min1h"> <span>Entre 30min et 1h</span></label>
                             </div>
                             <div class="ans ml-2">
-                                <label class="radio"> <input type="radio" name="1h" value="1h"> <span>Plus d’1h</span></label>
+                                <label class="radio"> <input type="radio" name="1h" value="uneh"> <span>Plus d’1h</span></label>
                             </div>
                         </div>
 
@@ -285,7 +281,7 @@
                                 <label class="radio"> <input type="radio" name="admin" value="admin"> <span>Administration</span></label>
                             </div>
                             <div class="ans ml-2">
-                                <label class="radio"> <input type="radio" name="it" value="it"> <span>IT</span></label>
+                                <label class="radio"> <input type="radio" name="itech" value="itech"> <span>IT</span></label>
                             </div>
                             <div class="ans ml-2">
                                 <label class="radio"> <input type="radio" name="management" value="management"> <span>Management</span></label>
@@ -309,12 +305,23 @@
                             </div>
                         </div>
 
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm"></div>
+                                <div class="col-sm">
+                                    <input type = "submit" class="btn btn-primary btn-danger" value = "Envoyer">
+                                </div>
+                                <div class="col-sm"></div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <input type = "submit" value = "Submit">
+
+
     </form>
 
 
