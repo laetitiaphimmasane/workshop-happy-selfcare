@@ -1,11 +1,15 @@
 var express = require('express');
 var app = express();
+const MongoClient = require("mongodb").MongoClient;
+
+
+
+
 
 app.use("/assets", express.static('./assets/'));
 
 app.get('/', function (req, res) {
     res.sendFile( __dirname + "/src/home.html" );
-    //res.send('Hello World');
 })
 
 app.get('/process_get', function (req, res) {
@@ -66,7 +70,7 @@ app.get('/process_get', function (req, res) {
 })
 
 app.get('/index.html', function (req, res) {
-    res.sendFile( __dirname + "/src/index.html" );
+    res.sendFile( __dirname + "/src/index.html");
 })
 
 
