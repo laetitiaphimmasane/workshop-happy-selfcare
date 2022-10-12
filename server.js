@@ -1,9 +1,18 @@
 var express = require('express');
 var app = express();
-const MongoClient = require("mongodb").MongoClient;
+const mysql = require('mysql');
+
+const db = mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "P@ssw0rd."
+});
 
 
-
+db.connect(function(err) {
+    if (err) throw err;
+    console.log("Connecté à la base de données MySQL!");
+});
 
 
 app.use("/assets", express.static('./assets/'));
